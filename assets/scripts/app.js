@@ -216,19 +216,19 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-  for (let i = 0; i < 3; i++) {
-    console.log('-----------');
-  }
+  // for (let i = 0; i < 3; i++) {
+  //   console.log('-----------');
+  // }
   // let j = 3;
   // while (j < 3) {
   //   console.log('-----------');
   //   j++;
   // }
-  let j = 3;
-  do {
-    console.log(j);
-    j++;
-  } while (j < 3);
+  // let j = 3;
+  // do {
+  //   console.log(j);
+  //   j++;
+  // } while (j < 3);
 
   // for (let i = 10; i > 0; ) {
   //   i--;
@@ -238,6 +238,14 @@ function printLogHandler() {
   // for (let i = 0; i < battleLog.length; i++) {
   //   console.log(battleLog[i]);
   // }
+
+  for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+      continue;
+    }
+    console.log(i);
+  }
+
   let i = 0;
   for (const logEntry of battleLog) {
     if ((!lastLoggedEntry && lastLoggedEntry !== 0) || lastLoggedEntry < i) {
